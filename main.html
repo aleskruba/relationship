@@ -1,0 +1,25 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1>This is main.html</h1>
+
+{% endblock %}
+
+{% block main %}
+
+{% for p in post %}
+<h1>Welcome to IT school Mr.{{p.author}} </h1>
+{% endfor %}
+
+<br>
+
+{% for p1 in post1 %}
+language-  {{ p1.language }}
+{% endfor %}
+<br>
+
+{% for p2 in post2 %}
+level-  {{ p2.level }}
+{% endfor %}
+
+{% endblock %}
